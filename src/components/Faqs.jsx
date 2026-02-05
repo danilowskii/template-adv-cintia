@@ -10,24 +10,24 @@ export default function Faqs({ data }) {
 
   const faqs = [
     {
-      question: "Como funciona a primeira consulta?",
+      question: 'Como funciona o "Ano Marítimo"?',
       answer:
-        "A primeira consulta é uma reunião diagnóstica. Analisamos detalhadamente o seu caso, os documentos disponíveis e apresentamos os possíveis caminhos jurídicos, riscos e expectativas de resultado. Pode ser realizada presencialmente ou por videoconferência.",
+        "É uma regra especial que permite a contagem diferenciada do tempo de serviço para o trabalhador embarcado, onde cada período de 255 dias de trabalho efetivo pode ser convertido em 1 ano de contribuição, acelerando o preenchimento dos requisitos para a aposentadoria.",
     },
     {
-      question: "Qual o valor dos honorários advocatícios?",
+      question: "Quais riscos de bordo dão direito à aposentadoria especial?",
       answer:
-        "Trabalhamos com total transparência. Os honorários variam conforme a complexidade da causa e seguem a tabela da OAB como referência mínima. Oferecemos opções de pagamento parcelado e, em alguns casos trabalhistas ou cíveis, honorários de êxito (pagos apenas ao final).",
+        "Exposição a ruído intenso, vibrações, óleos, graxas, combustíveis e risco de explosão ou eletricidade.",
     },
     {
-      question: "Quanto tempo demora o meu processo?",
+      question: "O tempo em navios estrangeiros conta para a aposentadoria?",
       answer:
-        "O tempo de duração depende de diversos fatores, como a complexidade da causa, o volume de processos no tribunal e a necessidade de produção de provas. Nossa equipe atua com proatividade para garantir a máxima celeridade possível, cobrando agilidade dos órgãos judiciais.",
+        "Sim, via acordos internacionais ou averbação específica, desde que comprovado documentalmente para o INSS.",
     },
     {
-      question: "Quais documentos devo ter na reunião?",
+      question: "É possível antecipar a aposentadoria do marítimo?",
       answer:
-        "Recomendamos trazer documento de identidade, comprovante de residência e todos os documentos relacionados ao fato (contratos, trocas de e-mail, fotos, boletim de ocorrência, notificações judiciais). Quanto mais informações, mais precisa será nossa análise.",
+        "Sim, convertendo tempo especial trabalhado antes da Reforma de 2019 e aplicando as regras de transição mais vantajosas.",
     },
   ];
   return (

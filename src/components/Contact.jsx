@@ -32,7 +32,7 @@ export default function Contact({ data, wppLink }) {
     `;
 
     const whatsappUrl = `https://wa.me/55${phone}?text=${encodeURIComponent(
-      message
+      message,
     )}`;
 
     window.open(whatsappUrl, "_blank");
@@ -63,48 +63,48 @@ export default function Contact({ data, wppLink }) {
             </p>
 
             <div className="space-y-8">
-              <div className="flex items-center gap-6 group">
-                <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm text-amber-500 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-300">
+              <div className="flex items-center gap-4 group">
+                <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-slate-950 transition-all duration-300">
                   <Phone className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-xs text-[var(--primary)] uppercase tracking-widest font-bold">
+                  <p className="text-xs text-[var(--primary)] uppercase tracking-widest font-">
                     Contato Rápido
                   </p>
                   <a
                     href={wppLink}
                     target="_blank"
-                    className="text-2xl font-bold text-[var(--third)]"
+                    className="text-xl font- text-[var(--third)]"
                   >
-                    (81) 99999-9999
+                    (81) 99607-0732
                   </a>
                 </div>
               </div>
 
-              <div className="flex items-center gap-6 group">
+              <div className="flex items-center gap-4 group">
                 <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-[var(--bg)] transition-all duration-300">
                   <Mail className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-xs text-[var(--primary)] uppercase tracking-widest font-bold">
+                  <p className="text-xs text-[var(--primary)] uppercase tracking-widest font-">
                     Email Corporativo
                   </p>
-                  <p className="text-xl font-bold text-[var(--third)]">
-                    contato@magalhaes.adv
+                  <p className="text-md md:text-lg  text-[var(--third)]">
+                    contato@cintiaalbuquerque.com.br
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-6 group">
+              <div className="flex items-center gap-4 group">
                 <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-[var(--bg)] transition-all duration-300">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
-                  <p className="text-xs text-[var(--primary)] uppercase tracking-widest font-bold">
-                    Sede
+                  <p className="text-xs text-[var(--primary)] uppercase tracking-widest ">
+                    Remoto
                   </p>
-                  <p className="text-lg font-bold text-[var(--third)]">
-                    Av. Boa Viagem, 1000 - Recife
+                  <p className="text-md md:text-lg font- text-[var(--third)]">
+                    Atendimento presencial mediante agendamento
                   </p>
                 </div>
               </div>
@@ -147,14 +147,14 @@ export default function Contact({ data, wppLink }) {
                   <option value="" className="bg-[var(--bg)]">
                     Selecione uma área
                   </option>
-                  <option value="Direito Civil" className="bg-[var(--bg)]">
-                    Direito Civil
+                  <option
+                    value="Direito Previdenciário"
+                    className="bg-[var(--bg)]"
+                  >
+                    Direito Previdenciário
                   </option>
-                  <option value="Trabalhista" className="bg-[var(--bg)]">
-                    Trabalhista
-                  </option>
-                  <option value="Empresarial" className="bg-[var(--bg)]">
-                    Empresarial
+                  <option value="Direito Tributário" className="bg-[var(--bg)]">
+                    Direito Tributário
                   </option>
                 </select>
               </div>

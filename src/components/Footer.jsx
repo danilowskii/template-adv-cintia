@@ -1,4 +1,4 @@
-import { Scale } from "lucide-react";
+import logo from "../assets/logo.webp";
 import {
   FaInstagram,
   FaLinkedin,
@@ -14,17 +14,13 @@ export default function Footer({ data, wppLink }) {
       link: `https://www.instagram.com/${data.instagram}`,
     },
     {
-      id: "ig",
+      id: "li",
       icon: <FaLinkedin className="w-6 h-6" />,
       link: `https://www.linkedin.com/in/${data.linkedin}`,
     },
+
     {
-      id: "ig",
-      icon: <FaFacebook className="w-6 h-6" />,
-      link: `https://www.facebook.com/${data.facebook}`,
-    },
-    {
-      id: "ig",
+      id: "wpp",
       icon: <FaWhatsapp className="w-6 h-6" />,
       link: wppLink,
     },
@@ -38,23 +34,23 @@ export default function Footer({ data, wppLink }) {
         "--text": data.colors.text,
         "--third": data.colors.third,
       }}
-      className="bg-[black] text-[var(--text)] py-16 border-t border-white/10 relative z-10"
+      className="bg-[#121927] text-[var(--text)] py-16 border-t border-white/10 relative z-10"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
-              <div className="p-1.5 bg-[var(--primary)] rounded-md">
-                <Scale className="w-5 h-5 text-black" />
+              <div className="p-1.5 w-12 h-12">
+                <img src={logo} alt="" />
               </div>
-              <span className="text-2xl font-bold text-[var(--third)] uppercase tracking-tight font-serif">
-                Magalhães
+              <span className="text-2xl  text-[var(--third)] uppercase tracking-tight font-serif">
+                Cíntia Albuquerque
               </span>
             </div>
             <p className="text-sm max-w-sm mb-8 leading-relaxed">
-              Comprometidos com a excelência jurídica e a defesa intransigente
-              dos interesses de nossos clientes. Sua segurança jurídica é nossa
-              prioridade.
+              A segurança jurídica que o profissional do mar precisa, com a
+              expertise de quem já esteve a bordo. De marítimo para marítimo,
+              protegendo o seu futuro.
             </p>
             <div className="flex gap-4">
               {socialIcons.map((social, index) => (
@@ -75,7 +71,7 @@ export default function Footer({ data, wppLink }) {
               Links Rápidos
             </h4>
             <ul className="space-y-3 text-sm">
-              {["Início", "Sobre Nós", "Áreas de Atuação", "Blog Jurídico"].map(
+              {["Início", "Áreas de Atuação", "Entre em contato"].map(
                 (link) => (
                   <li key={link}>
                     <a
@@ -86,7 +82,7 @@ export default function Footer({ data, wppLink }) {
                       {link}
                     </a>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>

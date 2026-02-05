@@ -1,7 +1,9 @@
 import { CheckCircle } from "lucide-react";
+import cintia1 from "../assets/cintia-1.webp";
+import cintia2 from "../assets/cintia-2.webp";
 
 export default function About({ data }) {
-  const firmName = "Magalhães & Associados";
+  const firmName = "Cìntia Albuquerque";
   return (
     <section
       id="sobre"
@@ -18,37 +20,41 @@ export default function About({ data }) {
           <div className="relative group">
             <div className="absolute inset-0 bg-[var(--primary)] blur-[80px] opacity-20"></div>
             <img
-              src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src={cintia2}
               alt="Reunião"
-              className="relative z-10 rounded-sm shadow-2xl object-cover h-[500px] w-full contrast-125 transition-all duration-1000 border border-white/10"
+              className="relative z-10 rounded-md shadow-2xl object-cover object-top h-[500px]  w-full contrast-125 transition-all border border-white/10"
             />
             <div className="absolute -bottom-8 -right-8 bg-[var(--bg)] backdrop-blur-xl p-8 rounded-sm shadow-2xl z-20 max-w-xs border-l-4 border-[var(--primary)] hidden lg:block">
               <p className="text-white font-serif italic text-lg leading-relaxed">
-                "A justiça não consiste em ser neutro, mas em descobrir o certo
-                e sustentá-lo."
+                "Defendemos os direitos de quem dedica sua vida ao trabalho no
+                mar."
               </p>
             </div>
           </div>
 
           <div>
             <h2 className="text-xs font-bold text-[var(--primary)] uppercase tracking-widest mb-3">
-              Sobre o Escritório
+              Sobre a Especialista
             </h2>
             <h3 className="text-4xl font-bold text-white font-serif mb-8">
-              Tradição, Ética e <br />
-              Resultados Comprovados
+              Formação de Elite <br /> e Vivência Marítima Real
             </h3>
             <p className="text-[var(--text)] mb-8 text-lg leading-relaxed">
-              Fundado há mais de 15 anos, o escritório {firmName} transcende a
-              advocacia tradicional. Somos parceiros de negócios e guardiões de
-              legados.
+              Com nove anos de atuação no setor de construção naval e
+              experiência embarcada como Oficial da Marinha Mercante, a Dra.
+              Cìntia possui uma compreensão técnica profunda sobre a rotina,
+              riscos e particularidades da carreira offshore. Sua atuação é
+              pautada por um robusto currículo acadêmico, incluindo
+              pós-graduações em Direito Marítimo, Portuário e Previdenciário,
+              além de um MBA em Gestão Jurídica e Aduaneira, garantindo uma
+              defesa estratégica e humanizada.
             </p>
 
             <div className="space-y-5">
               {[
-                "Atendimento personalizado e humanizado",
-                "Equipe disponível 24/7 para emergências",
-                "Transparência total nos honorários",
+                "Diploma em Ship Superintendent - Lloyd´s Maritime Academy - Londres",
+                "Pós-Graduação em Direito Marítimo e Portuário",
+                "Pós-Graduação em Direito Previdenciário",
               ].map((item, idx) => (
                 <div
                   key={idx}
@@ -65,16 +71,16 @@ export default function About({ data }) {
             <div className="mt-10 pt-8 border-t border-white/10">
               <div className="flex items-center gap-4">
                 <img
-                  src="https://randomuser.me/api/portraits/men/32.jpg"
-                  alt="Advogado Sênior"
+                  src={cintia1}
+                  alt="Advogada Sênior"
                   className="w-16 h-16 rounded-full object-cover border-2 border-[var(--secondary)]"
                 />
                 <div>
                   <p className="text-white font-bold text-lg">
-                    Dr. Carlos Magalhães
+                    Dra. Cíntia Albuquerque
                   </p>
                   <p className="text-[var(--primary)] text-sm tracking-wide">
-                    Sócio Fundador
+                    Sócia Fundadora
                   </p>
                 </div>
               </div>

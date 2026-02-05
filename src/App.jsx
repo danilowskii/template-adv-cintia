@@ -9,24 +9,27 @@ import Loc from "./components/Loc";
 import Footer from "./components/Footer";
 import { FaWhatsapp } from "react-icons/fa";
 import { ScrollReveal, Appear } from "./components/Motion";
+import shipBg from "./assets/ship.webp";
+import logoNome from "./assets/logo-nome.webp";
 
 const LawFirmWebsite = () => {
   const data = {
     colors: {
-      bg: "#020617",
-      primary: "#f59e0b",
-      secondary: "#c97c24",
+      bg: "#10192c",
+      primary: "#e7e8e4",
+      secondary: "#a9abae",
       third: "#fff",
-      text: "#cbd5e1",
+      text: "#e7e8e4",
       shadow: "0 0 20px rgba(245, 158, 11, 0.3)",
       hoverShadow: "0 0 30px rgba(245, 158, 11, 0.5)",
     },
-    firmName: "Magalhães & Associados",
-    contact: "81999999999",
-    instagram: "seuperfil",
-    linkedin: "seuperfil",
+    firmName: "Cíntia Albuquerque",
+    contact: "81996070732",
+    instagram: "cintiaalbuquerqueadv/",
+    linkedin: "cintia-albuquerque/",
     facebook: "seuperfil",
-    message: "Olá, vim do site e gostaria de mais informações.",
+    message:
+      "Olá, Cíntia! Vim pelo seu site e gostaria de um atendimento personalizado.",
   };
 
   const messageWhastapp = encodeURIComponent(data.message);
@@ -41,7 +44,7 @@ const LawFirmWebsite = () => {
         "--text": data.colors.text,
         "--third": data.colors.third,
       }}
-      className={`font-sans text-[var(--text)] antialiased bg-[var(--bg)] selection:bg-[var(--primary)] selection:text-white overflow-x-hidden relative`}
+      className={`font-sans text-[var(--text)] antialiased bg-[var(--bg)] selection:bg-[var(--primary)] selection:text-black overflow-x-hidden relative`}
     >
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-amber-600/20 rounded-full blur-[120px] opacity-40 mix-blend-screen animate-pulse"></div>
@@ -58,7 +61,17 @@ const LawFirmWebsite = () => {
       </Appear>
 
       <Nav data={data} wppLink={whatsappLink} />
-      <ScrollReveal>
+      <ScrollReveal className="relative min-h-screen overflow-hidden">
+        <img
+          src={logoNome}
+          alt=""
+          className="pointer-events-none absolute z-10 top-1/4 left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-[40%] md:-translate-y-1/2 md:left-[8%] w-[50%] md:w-[20%] max-w-md"
+        />
+        <img
+          src={shipBg}
+          className="pointer-events-none absolute opacity-60 md:opacity-60 inset-0 w-full h-full object-cover -z-0"
+          alt="Navio"
+        />
         <Hero data={data} wppLink={whatsappLink} />
       </ScrollReveal>
       <ScrollReveal>
@@ -76,9 +89,7 @@ const LawFirmWebsite = () => {
       <ScrollReveal>
         <Contact data={data} wppLink={whatsappLink} />
       </ScrollReveal>
-      <ScrollReveal>
-        <Loc data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
+
       <Footer data={data} wppLink={whatsappLink} />
     </div>
   );

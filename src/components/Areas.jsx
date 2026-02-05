@@ -1,27 +1,23 @@
-import { Scale, Shield, Gavel, Users, ArrowRight } from "lucide-react";
+import { Scale, Shield, Anchor, ArrowRight } from "lucide-react";
 export default function Areas({ data, wppLink }) {
   const practiceAreas = [
     {
-      title: "Direito Civil",
-      desc: "Soluções completas para conflitos de interesses, contratos e responsabilidade civil.",
+      title: "Aposentadoria Marítima",
+      desc: "Planejamento e concessão de aposentadoria especial e comum, com análise técnica do tempo de embarque e periculosidade.",
+      icon: <Anchor className="w-8 h-8 text-[var(--primary)]" />, // Use Anchor se tiver, ou Shield
+    },
+    {
+      title: "Isenção de Imposto de Renda",
+      desc: "Assessoria jurídica para garantir o direito à isenção de IR sobre rendimentos recebidos no exterior e em casos previstos em lei.",
       icon: <Scale className="w-8 h-8 text-[var(--primary)]" />,
     },
     {
-      title: "Direito Trabalhista",
-      desc: "Defesa estratégica para empresas e empregados em litígios trabalhistas complexos.",
-      icon: <Users className="w-8 h-8 text-[var(--primary)]" />,
-    },
-    {
-      title: "Direito Empresarial",
-      desc: "Consultoria jurídica preventiva e contenciosa para proteção do seu patrimônio.",
+      title: "Direito Previdenciário Offshore",
+      desc: "Suporte completo para auxílio-doença, pensão por morte e revisões de benefícios para quem atua em plataformas e navios mercantes.",
       icon: <Shield className="w-8 h-8 text-[var(--primary)]" />,
     },
-    {
-      title: "Direito Penal",
-      desc: "Atuação discreta e combativa em todas as fases do processo penal.",
-      icon: <Gavel className="w-8 h-8 text-[var(--primary)]" />,
-    },
   ];
+
   return (
     <section
       id="áreas de atuação"
@@ -45,12 +41,13 @@ export default function Areas({ data, wppLink }) {
             <span className="italic text-[var(--primary)]">Premium</span>
           </h3>
           <p className="text-slate-400">
-            Nossa equipe multidisciplinar oferece suporte técnico em diversas
-            áreas do direito, com foco na máxima eficiência.
+            Atendimento especializado no suporte técnico-jurídico em operações
+            marítimas e offshore, garantindo máxima eficiência na defesa dos
+            profissionais do mar.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {practiceAreas.map((area, index) => (
             <div
               key={index}
