@@ -39,12 +39,12 @@ export default function About({ data }) {
             <h3 className="text-4xl font-bold text-white font-serif mb-8">
               Formação de Elite <br /> e Vivência Marítima Real
             </h3>
-            <p className="text-[var(--text)] mb-8 text-lg leading-relaxed">
+            <p className="text-[var(--text)] mb-8 text-lg leading-relaxed tracking-tight">
               Com nove anos de atuação no setor de construção naval e
               experiência embarcada como Oficial da Marinha Mercante, a Dra.
-              Cìntia possui uma compreensão técnica profunda sobre a rotina,
-              riscos e particularidades da carreira offshore. Sua atuação é
-              pautada por um robusto currículo acadêmico, incluindo
+              Cíntia possui uma compreensão técnica profunda sobre a rotina,
+              riscos e particularidades da carreira marítima e offshore. Sua
+              atuação é pautada por um robusto currículo acadêmico, incluindo
               pós-graduações em Direito Marítimo, Portuário e Previdenciário,
               além de um MBA em Gestão Jurídica e Aduaneira, garantindo uma
               defesa estratégica e humanizada.

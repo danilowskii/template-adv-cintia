@@ -20,7 +20,7 @@ export default function Areas({ data, wppLink }) {
 
   return (
     <section
-      id="áreas de atuação"
+      id="areas"
       style={{
         "--bg": data.colors.bg,
         "--primary": data.colors.primary,

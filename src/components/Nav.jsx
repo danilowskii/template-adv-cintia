@@ -4,6 +4,19 @@ import logo from "../assets/logo.webp";
 
 export default function Nav({ data, wppLink }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuMobile = [
+    { name: "Início", link: "#" },
+    { name: "Sobre", link: "#sobre" },
+    { name: "Áreas de Atuação", link: "#areas" },
+    { name: "Publicações", link: `https://instagram.com/${data.instagram}` },
+    { name: "Contato", link: "#contato" },
+  ];
+  const menu = [
+    { name: "Início", link: "#" },
+    { name: "Sobre", link: "#sobre" },
+    { name: "Áreas de Atuação", link: "#areas" },
+    { name: "Publicações", link: `https://instagram.com/${data.instagram}` },
+  ];
 
   return (
     <header
@@ -37,20 +50,18 @@ export default function Nav({ data, wppLink }) {
           </div>
 
           <nav className="hidden md:flex space-x-8 items-center">
-            {["Início", "Sobre", "Áreas de Atuação", "Publicações"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className={`text-sm font-medium text-[var(--text)] hover:text-white transition-all uppercase tracking-widest relative group`}
-                >
-                  {item}
-                  <span
-                    className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--primary)] transition-all group-hover:w-full`}
-                  ></span>
-                </a>
-              ),
-            )}
+            {menu.map((item) => (
+              <a
+                key={item.name}
+                href={item.link}
+                className={`text-sm font-medium text-[var(--text)] hover:text-white transition-all uppercase tracking-widest relative group`}
+              >
+                {item.name}
+                <span
+                  className={`absolute -bottom-1 left-0 w-0 h-0.5 bg-[var(--primary)] transition-all group-hover:w-full`}
+                ></span>
+              </a>
+            ))}
           </nav>
 
           <div className="hidden md:flex">
@@ -86,20 +97,14 @@ export default function Nav({ data, wppLink }) {
           className={`md:hidden bg-[var(--bg)]/95 backdrop-blur-xl border-b border-white/10 absolute w-full`}
         >
           <div className="px-4 pt-2 pb-6 space-y-2">
-            {[
-              "Início",
-              "Sobre",
-              "Áreas de Atuação",
-              "Publicações",
-              "Contato",
-            ].map((item) => (
+            {menuMobile.map((item) => (
               <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
+                key={item.name}
+                href={item.link}
                 onClick={() => setIsMenuOpen(false)}
                 className={`block px-3 py-3 text-base font-medium text-[var(--text)] hover:text-[var(--primary)] hover:bg-white/5 rounded-md border-l-2 border-transparent hover:border-[var(--primary)]`}
               >
-                {item}
+                {item.name}
               </a>
             ))}
           </div>
