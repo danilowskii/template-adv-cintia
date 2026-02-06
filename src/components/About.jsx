@@ -3,7 +3,6 @@ import cintia1 from "../assets/cintia-1.webp";
 import cintia2 from "../assets/cintia-2.webp";
 
 export default function About({ data }) {
-  const firmName = "Cìntia Albuquerque";
   return (
     <section
       id="sobre"
@@ -22,7 +21,7 @@ export default function About({ data }) {
             <img
               src={cintia2}
               alt="Reunião"
-              className="relative z-10 rounded-md shadow-2xl object-cover object-top h-[500px]  w-full contrast-125 transition-all border border-white/10"
+              className="relative z-10 rounded-md shadow-2xl object-cover object-top max-h-[400px] md:h-[500px] w-full contrast- transition-all border border-white/10"
             />
             <div className="absolute -bottom-8 -right-8 bg-[var(--bg)] backdrop-blur-xl p-8 rounded-sm shadow-2xl z-20 max-w-xs border-l-4 border-[var(--primary)] hidden lg:block">
               <p className="text-white font-serif italic text-lg leading-relaxed">
@@ -80,7 +79,7 @@ export default function About({ data }) {
                     Dra. Cíntia Albuquerque
                   </p>
                   <p className="text-[var(--primary)] text-sm tracking-wide">
-                    Sócia Fundadora
+                    Fundadora
                   </p>
                 </div>
               </div>

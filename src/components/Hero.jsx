@@ -30,10 +30,10 @@ export default function Hero({ data, wppLink }) {
           </div>*/}
 
           <div className="space-y-2 flex flex-col items-start max-w-xl 2xl:max-w-3xl">
-            <p className="text-xl text-[var(--text)] max-w-xs leading-relaxed">
+            <p className="text-lg text-[var(--text)] max-w-xs leading-relaxed">
               Defesa previdenciária para profissionais máritmos e offshore
             </p>
-            <h2 className="text-4xl 2xl:text-5xl text-[var(--text)] leading-[1.2] font-serif uppercase tracking-tight">
+            <h2 className="text-3xl 2xl:text-5xl text-[var(--text)] leading-[1.2] font-serif uppercase tracking-tight">
               Com expertise técnica e
               <span className="pl-2 text-transparent bg-clip-text bg-gradient-to-r from-[var(--primary)] to-[var(--secondary)] drop-shadow-lg">
                 vivência real da profissão
@@ -43,13 +43,13 @@ export default function Hero({ data, wppLink }) {
               <a
                 href={wppLink}
                 target="_blank"
-                className="flex items-center justify-center gap-2 bg-[var(--primary)] text-[var(--bg)] px-8 py-4 rounded-sm font-bold hover:bg-[var(--secondary)] transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:scale-[1.03]"
+                className="flex items-center justify-center gap-2 bg-[var(--primary)] text-[var(--bg)] px-8 py-3 rounded-sm font-bold hover:bg-[var(--secondary)] transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:scale-[1.03]"
               >
-                Falar com Advogado <ArrowRight className="w-4 h-4" />
+                Falar com Advogada <ArrowRight className="w-4 h-4" />
               </a>
               <a
                 href="#sobre"
-                className="flex items-center justify-center px-8 py-4 rounded-sm font-bold text-white border border-white/20 hover:bg-white/5 hover:border-[var(--secondary)] transition-all backdrop-blur-sm"
+                className="flex items-center justify-center px-8 py-3 rounded-sm font-bold text-white border border-white/20 hover:bg-white/5 hover:border-[var(--secondary)] transition-all backdrop-blur-sm"
               >
                 Conhecer Mais
               </a>
