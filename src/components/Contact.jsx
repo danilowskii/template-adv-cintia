@@ -96,7 +96,7 @@ export default function Contact({ data, wppLink }) {
               </div>
 
               <div className="flex items-center gap-4 group">
-                <div className="w-14 h-14 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-[var(--bg)] transition-all duration-300">
+                <div className="w-14 h-14 shrink-0 bg-white/5 border border-white/10 flex items-center justify-center rounded-sm text-[var(--primary)] group-hover:bg-[var(--primary)] group-hover:text-[var(--bg)] transition-all duration-300">
                   <MapPin className="w-6 h-6" />
                 </div>
                 <div>
