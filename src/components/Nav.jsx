@@ -37,8 +37,8 @@ export default function Nav({ data, wppLink }) {
             <div className={`p-2 bg-[var(--primary)]/10 rounded-lg`}>
               <img src={logo} alt="Logo Cíntia" className="w-16 " />
             </div>
-            <div className="block md:hidden font-light">
-              <h1 className="text-lg text-white tracking-tight uppercase">
+            <div className="block md:hidden font-cinzel">
+              <h1 className="text-md text-white tracking-tight uppercase">
                 Cíntia Albuquerque
               </h1>
               <p
@@ -54,7 +54,7 @@ export default function Nav({ data, wppLink }) {
               <a
                 key={item.name}
                 href={item.link}
-                className={`text-sm font-medium text-[var(--text)] hover:text-white transition-all uppercase tracking-widest relative group`}
+                className={`text-sm font-cinzel text-[var(--text)] hover:text-white transition-all uppercase tracking-widest relative group`}
               >
                 {item.name}
                 <span
@@ -103,7 +103,7 @@ export default function Nav({ data, wppLink }) {
                 key={item.name}
                 href={item.link}
                 onClick={() => setIsMenuOpen(false)}
-                className={`block px-3 py-3 text-base font-medium text-[var(--text)] hover:text-[var(--primary)] hover:bg-white/5 rounded-md border-l-2 border-transparent hover:border-[var(--primary)]`}
+                className={`block px-3 py-3 text-base font-cinzel text-[var(--text)] hover:text-[var(--primary)] hover:bg-white/5 rounded-md border-l-2 border-transparent hover:border-[var(--primary)]`}
               >
                 {item.name}
               </a>

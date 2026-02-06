@@ -34,7 +34,7 @@ export default function Areas({ data, wppLink }) {
           <h2 className="text-xs font-bold text-[var(--primary)] uppercase tracking-[0.3em] mb-4">
             Especialidades
           </h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-white font-serif mb-6">
+          <h3 className="text-3xl md:text-5xl text-white font-cinzel mb-6">
             Atuação Jurídica{" "}
             <span className="italic text-[var(--primary)]">Premium</span>
           </h3>

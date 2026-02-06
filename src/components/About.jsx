@@ -21,7 +21,7 @@ export default function About({ data }) {
             <img
               src={cintia2}
               alt="Foto de Dra. Cíntia Albuquerque"
-              className="relative z-10 rounded-md shadow-2xl object-cover object-top max-h-[400px] md:h-[500px] w-full contrast- transition-all border border-white/10"
+              className="relative z-10 rounded-md shadow-2xl object-cover object-top max-h-[400px] md:max-h-[500px] md:h-[500px] w-full contrast- transition-all border border-white/10"
             />
             <div className="absolute -bottom-8 -right-8 bg-[var(--bg)] backdrop-blur-xl p-8 rounded-sm shadow-2xl z-20 max-w-xs border-l-4 border-[var(--primary)] hidden lg:block">
               <p className="text-white font-serif italic text-lg leading-relaxed">
@@ -35,7 +35,7 @@ export default function About({ data }) {
             <h2 className="text-xs font-bold text-[var(--primary)] uppercase tracking-widest mb-3">
               Sobre a Especialista
             </h2>
-            <h3 className="text-4xl font-bold text-white font-serif mb-8">
+            <h3 className="text-4xl  text-white font-serif mb-8">
               Formação de Elite <br /> e Vivência Marítima Real
             </h3>
             <p className="text-[var(--text)] mb-8 text-lg leading-relaxed tracking-tight">
@@ -60,7 +60,7 @@ export default function About({ data }) {
                   className="flex items-center gap-4 p-3 bg-white/5 rounded-sm border border-white/5 hover:border-[var(--primary)]/30 transition-colors"
                 >
                   <CheckCircle className="w-5 h-5 text-[var(--primary)] flex-shrink-0" />
-                  <span className="text-[var(--text)] font-medium text-sm">
+                  <span className="text-[var(--text)] font-serif text-sm sm:text-md">
                     {item}
                   </span>
                 </div>

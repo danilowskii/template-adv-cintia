@@ -54,7 +54,7 @@ export default function Contact({ data, wppLink }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20">
           <div>
-            <h2 className="text-4xl md:text-5xl font-bold font-serif mb-6 text-[var(--third)]">
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-[var(--third)]">
               Inicie sua Defesa
             </h2>
             <p className="text-[var(--text)] mb-10 text-lg">
@@ -114,7 +114,7 @@ export default function Contact({ data, wppLink }) {
           <div className="bg-white/5 border border-white/10 rounded-lg p-8 shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[var(--primary)] to-transparent opacity-50"></div>
 
-            <h3 className="text-2xl font-bold text-[var(--third)] mb-8 font-serif">
+            <h3 className="text-2xl  text-[var(--third)] mb-8 font-serif">
               Conte-nos seu caso
             </h3>
             <form onSubmit={handleSubmit} className="space-y-5">

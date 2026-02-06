@@ -47,7 +47,7 @@ export default function Faqs({ data }) {
           <h2 className="text-xs font-bold text-[var(--primary)] uppercase tracking-[0.3em] mb-4">
             Tire suas dúvidas
           </h2>
-          <h3 className="text-3xl md:text-5xl font-bold text-[var(--third)] font-serif">
+          <h3 className="text-3xl md:text-5xl text-[var(--third)] font-serif">
             Perguntas Frequentes
           </h3>
         </div>
@@ -72,7 +72,7 @@ export default function Faqs({ data }) {
                 className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
               >
                 <span
-                  className={`font-serif text-lg font-bold transition-colors duration-300 ${
+                  className={`font-serif text-md transition-colors duration-300 ${
                     openFaq === index
                       ? "text-[var(--primary)]"
                       : "text-[var(--third)]"

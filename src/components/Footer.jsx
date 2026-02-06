@@ -43,7 +43,7 @@ export default function Footer({ data, wppLink }) {
               <div className="p-1.5 w-12 h-12">
                 <img src={logo} alt="" />
               </div>
-              <span className="text-2xl  text-[var(--third)] uppercase tracking-tight font-serif">
+              <span className="text-2xl text-[var(--third)] uppercase tracking-tight font-serif">
                 Cíntia Albuquerque
               </span>
             </div>
