@@ -1,16 +1,19 @@
+import React, { lazy, Suspense } from "react";
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
-import Metrics from "./components/Metrics";
-import Areas from "./components/Areas";
 import About from "./components/About";
-import Faqs from "./components/Faqs";
 import Contact from "./components/Contact";
-import Loc from "./components/Loc";
-import Footer from "./components/Footer";
+
 import { FaWhatsapp } from "react-icons/fa";
 import { ScrollReveal, Appear } from "./components/Motion";
 import shipBg from "./assets/ship.webp";
 import logoNome from "./assets/logo-nome.webp";
+
+// Lazy imports
+const Metrics = lazy(() => import("./components/Metrics"));
+const Areas = lazy(() => import("./components/Areas"));
+const Faqs = lazy(() => import("./components/Faqs"));
+const Footer = lazy(() => import("./components/Footer"));
 
 const LawFirmWebsite = () => {
   const data = {
@@ -44,15 +47,20 @@ const LawFirmWebsite = () => {
         "--text": data.colors.text,
         "--third": data.colors.third,
       }}
-      className={`font-sans text-[var(--text)] antialiased bg-[var(--bg)] selection:bg-[var(--primary)] selection:text-black overflow-x-hidden relative`}
+      className="font-sans text-[var(--text)] antialiased bg-[var(--bg)] selection:bg-[var(--primary)] selection:text-black overflow-x-hidden relative"
     >
       <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
         <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-amber-600/20 rounded-full blur-[120px] opacity-40 mix-blend-screen animate-pulse"></div>
         <div className="absolute bottom-[10%] right-[-5%] w-[600px] h-[600px] bg-amber-800/10 rounded-full blur-[100px] opacity-30"></div>
-        <div className="absolute top-[40%] left-[20%] w-[300px] h-[300px] bg-slate-800/40 rounded-full blur-[80px]"></div>
       </div>
-      <Appear className={`fixed bottom-12 right-12 z-50`}>
-        <a className="" href={whatsappLink} target="_blank">
+
+      <Appear className="fixed bottom-12 right-12 z-50">
+        <a
+          aria-label="WhatsApp"
+          href={whatsappLink}
+          target="_blank"
+          rel="noreferrer"
+        >
           <div className="flex items-center justify-center">
             <FaWhatsapp className="z-10 absolute w-12 h-12 text-green-500" />
             <div className="z-0 absolute bg-green-400 rounded-full w-10 h-10 animate-ping"></div>
@@ -61,36 +69,40 @@ const LawFirmWebsite = () => {
       </Appear>
 
       <Nav data={data} wppLink={whatsappLink} />
-      <ScrollReveal className="relative min-h-screen overflow-hidden">
+
+      <section className="relative min-h-screen overflow-hidden">
         <img
           src={logoNome}
-          alt=""
+          alt="Cíntia Albuquerque"
           className="pointer-events-none absolute z-10 top-[14%] left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-[40%] md:-translate-y-1/2 md:left-[8%] w-[50%] md:w-[20%] max-w-md"
         />
         <img
           src={shipBg}
-          className="pointer-events-none absolute opacity-60 md:opacity-60 inset-0 w-full h-full object-cover -z-0"
+          className="pointer-events-none absolute opacity-60 inset-0 w-full h-full object-cover -z-0"
           alt="Navio"
+          loading="eager"
         />
         <Hero data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Metrics data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Areas data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <About data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Faqs data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
-      <ScrollReveal>
-        <Contact data={data} wppLink={whatsappLink} />
-      </ScrollReveal>
+      </section>
 
-      <Footer data={data} wppLink={whatsappLink} />
+      <Suspense fallback={<div className="h-screen bg-[#10192c]" />}>
+        <ScrollReveal>
+          <Metrics data={data} wppLink={whatsappLink} />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Areas data={data} wppLink={whatsappLink} />
+        </ScrollReveal>
+        <ScrollReveal>
+          <About data={data} wppLink={whatsappLink} />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Faqs data={data} wppLink={whatsappLink} />
+        </ScrollReveal>
+        <ScrollReveal>
+          <Contact data={data} wppLink={whatsappLink} />
+        </ScrollReveal>
+        <Footer data={data} wppLink={whatsappLink} />
+      </Suspense>
     </div>
   );
 };
