@@ -173,7 +173,7 @@ export default function Contact({ data, wppLink }) {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[var(--secondary)] hover:bg-[var(--primary)] text-slate-950 font-bold py-4 px-4 rounded-sm transition-all duration-300 shadow-[0_0_20px_rgba(245,158,11,0.2)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)] uppercase tracking-widest text-sm"
+                className="w-full bg-[var(--secondary)] hover:bg-[var(--primary)] text-slate-950 font-bold py-4 px-4 rounded-sm transition-all duration-300 shadow-[var(--primary)] hover:shadow-[var(--secondary)] uppercase tracking-widest text-sm"
               >
                 Enviar Solicitação
               </button>
