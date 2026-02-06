@@ -81,6 +81,7 @@ export default function Nav({ data, wppLink }) {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-white focus:outline-none"
+              aria-label={isMenuOpen ? "Fechar menu" : "Abrir menu"}
             >
               {isMenuOpen ? (
                 <X className="w-6 h-6" />

@@ -17,10 +17,10 @@ export default function About({ data }) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-20 items-center">
           <div className="relative group">
-            <div className="absolute inset-0 bg-[var(--primary)] blur-[80px] opacity-20"></div>
+            <div className="absolute inset-0 bg-[var(--primary)] blur-[40px] opacity-20"></div>
             <img
               src={cintia2}
-              alt="Reunião"
+              alt="Foto de Dra. Cíntia Albuquerque"
               className="relative z-10 rounded-md shadow-2xl object-cover object-top max-h-[400px] md:h-[500px] w-full contrast- transition-all border border-white/10"
             />
             <div className="absolute -bottom-8 -right-8 bg-[var(--bg)] backdrop-blur-xl p-8 rounded-sm shadow-2xl z-20 max-w-xs border-l-4 border-[var(--primary)] hidden lg:block">
@@ -71,7 +71,8 @@ export default function About({ data }) {
               <div className="flex items-center gap-4">
                 <img
                   src={cintia1}
-                  alt="Advogada Sênior"
+                  alt="Foto de Dra. Cíntia Albuquerque, Advogada Marítima"
+                  loading="lazy"
                   className="w-16 h-16 rounded-full object-cover border-2 border-[var(--secondary)]"
                 />
                 <div>

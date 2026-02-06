@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 export function ScrollReveal({ children, className, ...props }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.1 }}
-      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.05 }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       className={className}
       {...props}
     >
@@ -18,9 +18,9 @@ export function ScrollReveal({ children, className, ...props }) {
 export function Appear({ children, className, ...props }) {
   return (
     <motion.div
-      initial={{ y: 40, opacity: 0 }}
+      initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className={className}
       {...props}
     >

@@ -58,7 +58,12 @@ export default function Footer({ data, wppLink }) {
                   key={index}
                   className="w-10 h-10 bg-white/5 border border-white/10 rounded-full flex items-center justify-center hover:bg-[var(--primary)] hover:text-black hover:border-[var(--primary)] transition-all cursor-pointer"
                 >
-                  <a href={social.link} target="_blank">
+                  <a
+                    href={social.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Visitar nosso perfil no ${social.id}`}
+                  >
                     <span className="font-bold text-xs">{social.icon}</span>
                   </a>
                 </div>

@@ -111,7 +111,7 @@ export default function Contact({ data, wppLink }) {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-lg p-8 shadow-2xl relative overflow-hidden">
+          <div className="bg-white/5 border border-white/10 rounded-lg p-8 shadow-2xl relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[var(--primary)] to-transparent opacity-50"></div>
 
             <h3 className="text-2xl font-bold text-[var(--third)] mb-8 font-serif">
@@ -120,12 +120,17 @@ export default function Contact({ data, wppLink }) {
             <form onSubmit={handleSubmit} className="space-y-5">
               <div className="gap-5">
                 <div>
-                  <label className="block text-xs font-bold text-[var(--text)] mb-2 uppercase tracking-wide">
+                  <label
+                    htmlFor="nome"
+                    className="block text-xs font-bold text-[var(--text)] mb-2 uppercase tracking-wide"
+                  >
                     Nome
                   </label>
                   <input
+                    id="nome"
                     type="text"
                     name="nome"
+                    required
                     value={formData.nome}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-[var(--bg)] border border-white/10 rounded-sm focus:ring-1 focus:ring-[var(--primary)] focus:border-[var(--primary)] outline-none text-white placeholder-[var(--text)] transition-all"
@@ -135,10 +140,15 @@ export default function Contact({ data, wppLink }) {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-[var(--text)] mb-2 uppercase tracking-wide">
+                <label
+                  htmlFor="area"
+                  className="block text-xs font-bold text-[var(--text)] mb-2 uppercase tracking-wide"
+                >
                   Área
                 </label>
                 <select
+                  id="area"
+                  required
                   value={formData.area}
                   name="area"
                   onChange={handleChange}
@@ -159,10 +169,14 @@ export default function Contact({ data, wppLink }) {
                 </select>
               </div>
               <div>
-                <label className="block text-xs font-bold text-[var(--text)] mb-2 uppercase tracking-wide">
+                <label
+                  htmlFor="caso"
+                  className="block text-xs font-bold text-[var(--text)] mb-2 uppercase tracking-wide"
+                >
                   Caso
                 </label>
                 <textarea
+                  id="caso"
                   value={formData.caso}
                   name="caso"
                   onChange={handleChange}

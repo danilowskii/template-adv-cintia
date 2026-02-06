@@ -12,6 +12,7 @@ export default function Metrics({ data }) {
         "--text": data.colors.text,
       }}
       className="relative z-20 mt-10 mx-4 md:mx-auto max-w-4xl"
+      aria-label="Estatísticas e métricas"
     >
       <div className="bg-[var(--bg)]/40 backdrop-blur-xl border border-white/10 rounded-lg p-8 shadow-2xl">
         <div className="grid grid-cols-2 gap-6 text-center divide-x divide-white/10">

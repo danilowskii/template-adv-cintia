@@ -26,8 +26,6 @@ export default function Areas({ data, wppLink }) {
         "--primary": data.colors.primary,
         "--secondary": data.colors.secondary,
         "--text": data.colors.text,
-        "--shadow": data.colors.shadow,
-        "--hover-shadow": data.colors.hoverShadow,
       }}
       className="py-32 relative"
     >
@@ -51,9 +49,9 @@ export default function Areas({ data, wppLink }) {
           {practiceAreas.map((area, index) => (
             <div
               key={index}
-              className="group relative bg-white/5 backdrop-blur-md border border-white/5 p-8 rounded-sm hover:bg-white/10 transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-white/5 border border-white/5 p-8 rounded-sm hover:bg-white/10 transition-[transform,background-color] duration-300 hover:-translate-y-2"
             >
-              <div className="absolute -inset-0.5 bg-gradient-to-br from-[var(--primary)] to-transparent opacity-0 group-hover:opacity-20 blur-xl transition-opacity duration-500 rounded-sm"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-br from-[var(--primary)] to-transparent opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500 rounded-sm"></div>
 
               <div className="relative z-10">
                 <div className="mb-6 p-4 bg-[var(--bg)] w-fit rounded-lg border border-white/10 group-hover:border-[var(--primary)] group-hover:scale-110 transition-all duration-300 shadow-lg">
