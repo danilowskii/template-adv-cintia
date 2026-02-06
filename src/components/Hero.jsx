@@ -38,7 +38,7 @@ export default function Hero({ data, wppLink }) {
               </a>
               <a
                 href="#sobre"
-                className="flex items-center justify-center px-8 py-3 rounded-sm font-bold text-white border border-white/20 hover:bg-white/5 hover:border-[var(--secondary)] transition-all backdrop-blur-sm"
+                className="flex items-center justify-center px-8 py-3 rounded-sm font-bold text-white border border-white/20 hover:bg-white/5 hover:border-[var(--secondary)] transition-all"
               >
                 Conhecer Mais
               </a>

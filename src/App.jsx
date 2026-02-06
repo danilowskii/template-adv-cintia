@@ -74,10 +74,12 @@ const LawFirmWebsite = () => {
         <img
           src={logoNome}
           alt="Cíntia Albuquerque"
+          fetchpriority="high"
           className="pointer-events-none absolute z-10 top-[14%] left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-[40%] md:-translate-y-1/2 md:left-[8%] w-[50%] md:w-[20%] max-w-md"
         />
         <img
           src={shipBg}
+          fetchpriority="high"
           className="pointer-events-none absolute opacity-60 inset-0 w-full h-full object-cover -z-0"
           alt="Navio"
           loading="eager"
@@ -86,9 +88,8 @@ const LawFirmWebsite = () => {
       </section>
 
       <Suspense fallback={<div className="h-screen bg-[#10192c]" />}>
-        <ScrollReveal>
-          <Metrics data={data} wppLink={whatsappLink} />
-        </ScrollReveal>
+        <Metrics data={data} wppLink={whatsappLink} />
+
         <ScrollReveal>
           <Areas data={data} wppLink={whatsappLink} />
         </ScrollReveal>
