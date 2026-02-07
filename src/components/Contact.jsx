@@ -47,7 +47,7 @@ export default function Contact({ data, wppLink }) {
         "--text": data.colors.text,
         "--third": data.colors.third,
       }}
-      className="py-24 relative overflow-hidden"
+      className="py-16 relative overflow-hidden"
     >
       <div className="absolute right-0 top-20 w-1/2 h-full bg-gradient-to-l from-[var(--bg)] to-transparent blur-3xl pointer-events-none"></div>
 

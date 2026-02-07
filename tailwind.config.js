@@ -6,6 +6,7 @@ export default {
       fontFamily: {
         cinzel: ["cinzel", "serif"],
         serif: ["cinzel", "serif"],
+        comfortaa: ["comfortaa", "serif"],
       },
     },
   },

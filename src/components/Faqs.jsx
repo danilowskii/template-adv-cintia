@@ -39,7 +39,7 @@ export default function Faqs({ data }) {
         "--third": data.colors.third,
         "--text": data.colors.text,
       }}
-      className="py-24 relative z-10"
+      className="py-16 relative z-10"
     >
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Cabeçalho da Seção */}

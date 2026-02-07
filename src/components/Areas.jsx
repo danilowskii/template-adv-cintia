@@ -27,7 +27,7 @@ export default function Areas({ data, wppLink }) {
         "--secondary": data.colors.secondary,
         "--text": data.colors.text,
       }}
-      className="py-32 relative"
+      className="py-16 relative"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-20">
@@ -57,7 +57,7 @@ export default function Areas({ data, wppLink }) {
                 <div className="mb-6 p-4 bg-[var(--bg)] w-fit rounded-lg border border-white/10 group-hover:border-[var(--primary)] group-hover:scale-110 transition-all duration-300 shadow-lg">
                   {area.icon}
                 </div>
-                <h4 className="text-xl font-bold text-white mb-3 font-serif border-b border-white/5 pb-2 inline-block">
+                <h4 className="text-xl text-white mb-3 font-serif border-b border-white/5 pb-2 inline-block">
                   {area.title}
                 </h4>
                 <p className="text-[var(--text)] text-sm leading-relaxed mb-6">

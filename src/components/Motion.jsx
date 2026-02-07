@@ -1,16 +1,6 @@
 import { motion } from "framer-motion";
 
-const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
-
 export function ScrollReveal({ children, className, ...props }) {
-  if (isMobile) {
-    return (
-      <div className={className} {...props}>
-        {children}
-      </div>
-    );
-  }
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -26,14 +16,6 @@ export function ScrollReveal({ children, className, ...props }) {
 }
 
 export function Appear({ children, className, ...props }) {
-  if (isMobile) {
-    return (
-      <div className={className} {...props}>
-        {children}
-      </div>
-    );
-  }
-
   return (
     <motion.div
       initial={{ y: 10, opacity: 0 }}

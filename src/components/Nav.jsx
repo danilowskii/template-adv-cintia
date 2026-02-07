@@ -42,7 +42,7 @@ export default function Nav({ data, wppLink }) {
                 Cíntia Albuquerque
               </h1>
               <p
-                className={`text-[10px] text-[var(--primary)] tracking-[0.2em] uppercase`}
+                className={`text-[9px] text-[var(--primary)] tracking-[0.2em] font-comfortaa uppercase`}
               >
                 Advogada Marítima
               </p>

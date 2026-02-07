@@ -12,7 +12,7 @@ export default function About({ data }) {
         "--secondary": data.colors.secondary,
         "--text": data.colors.text,
       }}
-      className="py-24 bg-[var(--bg)] backdrop-blur-sm border-y border-white/5"
+      className="py-20 bg-[var(--bg)] backdrop-blur-sm border-y border-white/5"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-20 items-center">
