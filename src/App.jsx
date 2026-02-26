@@ -75,7 +75,7 @@ const LawFirmWebsite = () => {
           src={logoNome}
           alt="Cíntia Albuquerque"
           fetchpriority="high"
-          className="pointer-events-none absolute z-10 top-[15%] left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-[40%] md:-translate-y-1/2 md:left-[8%] w-[50%] md:w-[20%] max-w-md"
+          className="pointer-events-none absolute z-10 top-[15%] left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-[40%] md:-translate-y-1/2 md:left-[5%] w-[50%] md:w-[20%] max-w-md"
         />
         <img
           src={shipBg}

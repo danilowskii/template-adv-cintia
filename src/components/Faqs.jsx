@@ -17,7 +17,7 @@ export default function Faqs({ data }) {
     {
       question: "Quais riscos de bordo dão direito à aposentadoria especial?",
       answer:
-        "Exposição a ruído intenso, vibrações, óleos, graxas, combustíveis e risco de explosão ou eletricidade.",
+        "Exposição a agentes nocivos como ruído, produtos químicos, calor, frio, vibração, eletricidade, dentre outros. ",
     },
     {
       question: "O tempo em navios estrangeiros conta para a aposentadoria?",
@@ -27,7 +27,13 @@ export default function Faqs({ data }) {
     {
       question: "É possível antecipar a aposentadoria do marítimo?",
       answer:
-        "Sim, convertendo tempo especial trabalhado antes da Reforma de 2019 e aplicando as regras de transição mais vantajosas.",
+        "Sim. Existem alguns períodos “escondidos” que podem antecipar seu tempo de contribuição. Por exemplo: Tempo de serviço militar, tempo de escola de formação militar, trabalho em atividade com exposição a agente nocivo, período como aluno-aprendiz, trabalho na pesca artesanal ou industrial, dentre outros. ",
+    },
+    {
+      question:
+        "O período trabalhado como pescador conta como tempo de contribuição para o INSS?",
+      answer:
+        "Sim, a atividade desenvolvida como pescador pode ser computado como tempo de contribuição para fins de aposentadoria e demais benefícios do INSS, respeitado o preenchimento dos requisitos específicos desta categoria. ",
     },
   ];
   return (
