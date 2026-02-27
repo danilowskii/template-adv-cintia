@@ -33,7 +33,7 @@ export default function Faqs({ data }) {
       question:
         "O período trabalhado como pescador conta como tempo de contribuição para o INSS?",
       answer:
-        "Sim, a atividade desenvolvida como pescador pode ser computado como tempo de contribuição para fins de aposentadoria e demais benefícios do INSS, respeitado o preenchimento dos requisitos específicos desta categoria. ",
+        "Sim, a atividade desenvolvida como pescador pode ser computada como tempo de contribuição para fins de aposentadoria e demais benefícios do INSS, respeitado o preenchimento dos requisitos específicos desta categoria. ",
     },
   ];
   return (
