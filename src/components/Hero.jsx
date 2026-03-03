@@ -20,8 +20,8 @@ export default function Hero({ data, wppLink }) {
         <div className="flex flex-col items-center text-start space-y-6">
           <div className="space-y-2 flex flex-col items-start max-w-xl 2xl:max-w-3xl">
             <p className="text-sm font-cinzel text-[var(--text)] max-w-xs leading-relaxed">
-              Defesa previdenciária, tributária e trabalhista para profissionais
-              marítimos e offshore
+              Defesa previdenciária e tributária para profissionais marítimos e
+              offshore
             </p>
             <h1 className="text-3xl 2xl:text-5xl text-[var(--text)] leading-[1.2] font-serif uppercase tracking-tight">
               Com expertise técnica e

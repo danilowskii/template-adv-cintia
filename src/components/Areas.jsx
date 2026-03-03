@@ -43,16 +43,6 @@ export default function Areas({ data, wppLink }) {
       desc: "Suporte completo no pedido de auxílio-doença e aposentadoria por invalidez para trabalhadores impedidos de atuar.",
       icon: <HeartPulse className="w-6 h-6 text-[var(--primary)]" />,
     },
-    {
-      title: "Incapacidade Acidentária",
-      desc: "Defesa em acidentes de trabalho e doenças ocupacionais, garantindo o nexo causal, estabilidade e benefício justo.",
-      icon: <HardHat className="w-6 h-6 text-[var(--primary)]" />,
-    },
-    {
-      title: "Direito Trabalhista",
-      desc: "Proteção de direitos no mar: análise de contratos, jornadas, horas extras e verbas rescisórias para marítimos.",
-      icon: <Gavel className="w-6 h-6 text-[var(--primary)]" />,
-    },
   ];
 
   return (
@@ -82,7 +72,7 @@ export default function Areas({ data, wppLink }) {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-3 text-md">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 text-md">
           {practiceAreas.map((area, index) => (
             <div
               key={index}
